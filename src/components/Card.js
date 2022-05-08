@@ -1,5 +1,4 @@
 import Time from './Time'
-import Tasks from './Tasks'
 
 function Card(){
     return <div>

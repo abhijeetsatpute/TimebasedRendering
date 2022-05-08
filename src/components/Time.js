@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Tasks from "./Tasks";
+import CheckList from './CheckList/CheckList'
 
 export default function Time() {
   let time = new Date().toLocaleTimeString();
@@ -14,7 +14,7 @@ export default function Time() {
   return (
     <div>
       <h1>{currentTime}</h1>
-      <Tasks/>
+      <CheckList time={currentTime}/>
     </div>
   );
 }
