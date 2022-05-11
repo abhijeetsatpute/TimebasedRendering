@@ -6,7 +6,7 @@ export default function CheckList(props) {
 
     return <div>
         {(() => {
-            if (TIME >= 0 && TIME < 6) {
+            if (TIME >= 6 && TIME < 9) {
                 return (
                     <Tasks tasks={data["EarlyMorning"]}/>
                 )

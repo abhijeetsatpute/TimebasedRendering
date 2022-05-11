@@ -8,5 +8,15 @@
 }
 
 .time>h1{
-  color: rgb(71, 16, 173);
+  color: rgb(226, 51, 21);
+  font-family: monospace;
+  font-size: 4rem;
+  padding: 20px;
+  background-color:wheat;
+  border: 2px solid chocolate;
+}
+
+form>div>input {
+  width: 30px;
+  height: 30px;
 }

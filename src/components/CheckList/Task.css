@@ -1,0 +1,11 @@
+.checked {
+    text-decoration: line-through;
+}
+
+.tasks {
+    padding: 5px;
+    margin: 10px;
+    font-size: 2rem;
+    font-family:cursive;
+}
+
