@@ -1,37 +1,34 @@
-import EarlyMorning from "./EarlyMorning"
-import LateMorning from "./LateMorning"
-import EarlyAfternoon from "./EarlyAfternoon"
-import LateAfternoon from "./LateAfternoon"
-import Evening from "./Evening"
-import Night from "./Night"
+import data from '../../data/tasks.json';
+import Tasks from './Tasks';
 
 export default function CheckList(props) {
+    let TIME = new Date(props.time).getHours();
 
     return <div>
         {(() => {
-            if (props.time >= '06:00:00 AM' && props.time < '09:00:00 AM') {
+            if (TIME >= 0 && TIME < 6) {
                 return (
-                    <EarlyMorning/>
+                    <Tasks tasks={data["EarlyMorning"]}/>
                 )
-            } else if (props.time >= '09:00:00 AM' && props.time < '12:00:00 PM'){
+            } else if (TIME >= 9 && TIME < 12){
                 return (
-                    <LateMorning/>
+                    <Tasks tasks={data["LateMorning"]}/>
                 )
-            } else if (props.time >= '12:00:00 PM' && props.time < '03:00:00 PM'){
+            } else if (TIME >= 12 && TIME < 15){
                 return (
-                    <EarlyAfternoon/>
+                    <Tasks tasks={data["EarlyAfternoon"]}/>
                 )
-            } else if (props.time >= '03:00:00 PM' && props.time < '06:00:00 PM'){
+            } else if (TIME >= 15 && TIME < 18){
                 return (
-                    <LateAfternoon/>
+                    <Tasks tasks={data["LateAfternoon"]}/>
                 )
-            } else if (props.time >= '06:00:00 PM' && props.time < '09:00:00 PM'){
+            } else if (TIME >= 18 && TIME < 21){
                 return (
-                    <Evening/>
+                    <Tasks tasks={data["Evening"]}/>
                 )
-            } else if (props.time >= '09:00:00 PM' && props.time < '12:00:00 AM'){
+            } else if (TIME >= 21 && TIME < 24){
                 return (
-                    <Night/>
+                    <Tasks tasks={data["Night"]}/>
                 )
             }
             

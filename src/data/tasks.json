@@ -1,0 +1,42 @@
+{
+    "EarlyMorning" : [
+        "Brush - 1",
+        "Face wash - 1",
+        "Water - 1",
+        "1000 Steps",
+        "GATE"
+    ],
+    "LateMorning" : [
+        "Bath",
+        "Hair Wash",
+        "Breakfast :Oats",
+        "Mlitivitamins",
+        "Water - 2",
+        "GATE"
+    ],
+    "EarlyAfternoon" : [
+        "Switch",
+        "Lunch :Salads + Daal",
+        "Water - 2",
+        "Face wash - 2",
+        "Spot Treatment",
+        "GATE"
+    ],
+    "LateAfternoon" : [
+        "Switch",
+        "GATE"
+    ],
+    "Evening" : [ 
+        "Walk",
+        "Workout",
+        "Protein",
+        "Hair Pill",
+        "GATE"
+    ],
+    "Night" : [
+        "Water -4",
+        "Dinner :Salads + Shake",
+        "Brush - 2",
+        "Face wash - 3"
+    ]
+}
